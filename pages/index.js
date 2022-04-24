@@ -1,5 +1,5 @@
 import Head from 'next/head'
-
+import Link from 'next/link'
 export default function Home() {
   return (
     <div className="container">
@@ -9,40 +9,43 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <h1 className="title">
+        Aboubacar's{' '}
+        <Link href="/posts/first-post">
+          <a>CV</a>
+        </Link>
+      </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          Welcome in my first application with Next.js.
         </p>
 
         <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/posts/second-post" className="card">
+            <h3>PRESENTATION &rarr;</h3>
+            <p>Vous trouverez sur ce lien une présentation de ma personne et de mes projets.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href=" https://nbsidiki.github.io/mon_cv/" className="card">
+            <h3>CV with GitPage &rarr;</h3>
+            <p>Learn about Aboubacar and his experience. </p>
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://github.com/nbsidiki"
             className="card"
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>Github &rarr;</h3>
+            <p>Decouvrez mes projets informatiques avec github repositorie.</p>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/aboubacar-sidiki-nabe-159575222/"
+            className="card"
+          >
+            <h3>LinkedIn &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Ayez un accès à mes actualités professionnelles grace à LinkedIn.
             </p>
           </a>
         </div>
